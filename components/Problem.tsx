@@ -21,11 +21,12 @@ const Arrow = ({ extraStyle }: { extraStyle: string }) => {
     </svg>
   );
 };
-const Step = ({ emoji, text }: { emoji: string; text: string }) => {
+const Step = ({ emoji, text, subtext }: { emoji: string; text: string; subtext?: string }) => {
   return (
     <div className="w-full md:w-48 flex flex-col gap-2 items-center justify-center">
       <span className="text-4xl">{emoji}</span>
       <h3 className="font-bold">{text}</h3>
+      {subtext && <p className="text-sm opacity-80">{subtext}</p>}
     </div>
   );
 };
@@ -44,23 +45,36 @@ const Problem = () => {
     <section className="bg-neutral text-neutral-content">
       <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          80% of startups fail because founders never launch
+          Tired of the Lab Management Treadmill?
         </h2>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          Emails, DNS records, user authentication... There&apos;s so much going
-          on.
+          The constant dread of lab outages, furious calls from instructors, and endless hours 
+          wasted on manual provisioning. It's a cycle that drains your resources, stifles your 
+          growth, and keeps you awake at night. You deserve better.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
-          <Step emoji="🧑‍💻" text="8 hrs to add Stripe" />
+          <Step 
+            emoji="🚨" 
+            text="Lab Outages" 
+            subtext="Training disrupted, reputation damaged"
+          />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😮‍💨" text="Struggle to find time" />
+          <Step 
+            emoji="⏰" 
+            text="Manual Overhead" 
+            subtext="10+ minutes per lab setup"
+          />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😔" text="Quit project" />
+          <Step 
+            emoji="📉" 
+            text="Lost Opportunities" 
+            subtext="Can't scale for larger contracts"
+          />
         </div>
       </div>
     </section>

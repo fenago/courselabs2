@@ -7,28 +7,27 @@ const Hero = () => {
     <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
       <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
         <h1 className="font-extrabold text-4xl lg:text-6xl tracking-tight">
-          Launch your Agentic SaaS in days, not weeks
+          End the Lab Outage Nightmare. Reclaim Your Peace of Mind.
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          FeNAgO empowers students, developers, startups, and entrepreneurs to build
-          fully agentic SaaS solutions at lightning speed by handling security
-          (logins & registration), database setup, SEO, and monetization right out
-          of the box—powered by Next.js, Tailwind, and React. All you bring is
-          your idea!
+          CourseLabs.io puts your virtual labs on auto-pilot, delivering reliable, 
+          scalable, and cost-optimized training environments so you can focus on 
+          what matters: world-class education. Transform from reactive troubleshooter 
+          to strategic leader with instant provisioning and intelligent automation.
         </p>
         <a
-          href="https://fenago.com"
+          href="#pricing"
           className="btn btn-primary btn-wide"
         >
-          Get {config.appName}
+          Start Your Free Trial
         </a>
 
         <TestimonialsAvatars priority={true} />
       </div>
       <div className="lg:w-full">
         <Image
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"
-          alt="FeNAgO product demo"
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+          alt="CourseLabs.io virtual training platform"
           className="w-full"
           priority={true}
           width={500}
